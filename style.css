@@ -6,12 +6,63 @@
     font-family: 'Inter', sans-serif;
     font-family: 'Jura', sans-serif;
 }
-header{
-    .menu li{
-        font-family: 'Inter', sans-serif;
-        font-size: small;
-    }
+div{
+    border-bottom: 2em;
+    border-bottom-color: red;
+}
+header .title-miguel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    
+    margin: 1rem auto 2rem;
+}
+/* .menu{
+    border-width: 1em;
+    border-color: red yellow green blue;
+} */
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+}
+.menu ul li{
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    margin: 10px 10px;
 }
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Galery */
 
+body div .galery-art{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+.galery-art img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.galery-art img:hover{
+    cursor: crosshair;
+    width: 300px;
+    filter: contrast(120%);
+}
+
+body{
+
+}
+div a img{
+    width: 30px;
 }
