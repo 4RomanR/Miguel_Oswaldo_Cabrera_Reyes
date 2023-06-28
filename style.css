@@ -1,51 +1,70 @@
+:root {
+    --bg-c-1: #ac6869;
+    --bg-c-2: #eca4a4;
+    --bg-c-3: #f7e2e1;
+    --links: #dcebed;
+    --txt-1:  black;
+    --txt-2: #b2b9bf;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
     font-family: 'Inter', sans-serif;
-    font-family: 'Jura', sans-serif;
-}
-div{
-    border-bottom: 2em;
-    border-bottom-color: red;
+    text-decoration: none;  
 }
 header .title-miguel{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;   
-    
-    margin: 1rem auto 2rem;
+    text-align: center;       
+    margin: 10px auto;
+
 }
-/* .menu{
-    border-width: 1em;
-    border-color: red yellow green blue;
-} */
+header h1, h2{ 
+    font-family: 'Jura', sans-serif;
+
+}
+.menu{
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bg-c-2) white ;
+}
 .menu ul{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     list-style: none;
+    font-size: small;
 }
 .menu ul li{
-    font-family: 'Inter', sans-serif;
-    font-size: small;
-    margin: 10px 10px;
+    margin: 5px 10px;
+    padding: 10px;
 }
+.menu ul li:hover{
+    background-color: var(--bg-c-3);
+    }
+
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/* Galery */
+body p{
+    font-size: smaller;
+}
+/* GALERY */
 
-body div .galery-art{
+body div .galery-art{ 
     display: flex;
     width: 600px;
     height: 430px;
+    margin: 0px 0px 30px 0;   
 }
 .galery-art img{
     width: 0px;
@@ -60,9 +79,44 @@ body div .galery-art{
     filter: contrast(120%);
 }
 
-body{
+.nota {
+    text-align: center;
+    background-color: var(--bg-c-2) ;
 
+    margin: 5px 0;
+    padding: 30px 20px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--bg-c-3);
+    margin: 5px 0;
+    padding: 30px 20px;
+}
+.contacts div{
+    text-align: center;
+    margin: 30px 30px;
+    
+}
+.contacts div p:nth-child(1){
+    margin: 10px 30px;
 }
 div a img{
-    width: 30px;
+    width: 25px;
+    margin: auto 5px;
+}
+
+footer{
+    text-align: center;
+    border: 1px;
+    border-color: var(--bg-c-1) white var(--bg-c-1) white ;
+    border-style: solid; 
+    width: 610px;
+    margin-bottom: 30px;
+    
+}
+footer p{
+    margin: 10px;      
 }
